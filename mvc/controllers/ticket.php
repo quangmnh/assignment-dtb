@@ -22,7 +22,7 @@ class Ticket extends Controller {
             } else {
                 if(!empty($_POST['issue'])) $this->ticketModel->insertTicket($_POST['issue']);
                 if(!empty($_POST['delete'])) $this->ticketModel->deleteTicket($_POST['delete']);
-                if(!empty($_POST['reissue'])) $this->ticketModel->updateTicket($_POST['Ticket_ID'], $_POST['reissue'], $_POST['TicketTimestamp']);
+                if(!empty($_POST['reissue'])) $this->ticketModel->updateTicket($_POST['Ticket_ID'], $_POST['reissue'], $_POST['TicketTimestamp'], $_POST['status']);
                 global $qr_res;
                 $qr_res = json_decode($this->ticketModel->getTicketList(), true);
             }

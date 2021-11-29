@@ -1,3 +1,7 @@
+<link 
+    href="./public/css/track_playlist.css"
+    rel="stylesheet" 
+  />
 <?php 
   if ( isset($data["qr_systemPlaylist"]) ) { 
 

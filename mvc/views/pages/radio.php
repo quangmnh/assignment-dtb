@@ -39,8 +39,8 @@
         echo '<input id="hidden-radio-name" type="hidden" value="'.$row["Name"].'" />';
         echo '<input id="hidden-radio-frequency" type="hidden" value="'.$row["Frequency"].'" />';
         echo '<input id="hidden-radio-r-producer-id" type="hidden" value="'.$row["R_Producer_ID"].'" />';
-        echo '<a data-mdb-toggle="modal" class="edit-radio-btn" data-mdb-target="#editRadioModal"><i class="fas fa-pencil-alt text-warning fa-1x mx-2"></i></a>';
-        echo '<a data-mdb-toggle="modal" class="del-radio-btn" data-mdb-target="#deleteRadioModal"><i class="fas fa-trash-alt text-danger fa-1x mx-2"></i></a>';
+        echo '<a style="cursor: pointer;" data-mdb-toggle="modal" class="edit-radio-btn" data-mdb-target="#editRadioModal"><i class="fas fa-pencil-alt text-warning fa-1x mx-2"></i></a>';
+        echo '<a style="cursor: pointer;" data-mdb-toggle="modal" class="del-radio-btn" data-mdb-target="#deleteRadioModal"><i class="fas fa-trash-alt text-danger fa-1x mx-2"></i></a>';
         echo '</td>';
         echo '</tr>';
     }
@@ -114,7 +114,7 @@
         echo '<input id="hidden-radio-name" type="hidden" value="'.$row["Name"].'" />';
         echo '<input id="hidden-radio-genre" type="hidden" value="'.$row["Genre"].'" />';
         // echo '<a data-mdb-toggle="modal" class="edit-radio-btn" data-mdb-target="#editGenreModal"><i class="fas fa-pencil-alt text-warning fa-1x mx-2"></i></a>';
-        echo '<a data-mdb-toggle="modal" class="del-genre-btn" data-mdb-target="#deleteGenreModal"><i class="fas fa-trash-alt text-danger fa-1x mx-2"></i></a>';
+        echo '<a style="cursor: pointer;" data-mdb-toggle="modal" class="del-genre-btn" data-mdb-target="#deleteGenreModal"><i class="fas fa-trash-alt text-danger fa-1x mx-2"></i></a>';
         echo '</td>';        
         echo '</tr>';
     }
@@ -195,7 +195,7 @@
         echo '<input id="hidden-schedule-date" type="hidden" value="'.$row["Date"].'" />';
         echo '<input id="hidden-schedule-languages" type="hidden" value="'.$row["Languages"].'" />';
         
-        echo '<a data-mdb-toggle="modal" class="del-schedule-btn" data-mdb-target="#deleteScheduleModal"><i class="fas fa-trash-alt text-danger fa-1x mx-2"></i></a>';
+        echo '<a style="cursor: pointer;" data-mdb-toggle="modal" class="del-schedule-btn" data-mdb-target="#deleteScheduleModal"><i class="fas fa-trash-alt text-danger fa-1x mx-2"></i></a>';
         echo '</td>';
         echo '</tr>';
     }
@@ -250,8 +250,8 @@
       echo '<input id="hidden-producer-address" type="hidden" value="'.$row["Address"].'" />';
       echo '<input id="hidden-producer-phonenumber" type="hidden" value="'.$row["PhoneNumber"].'" />';
       echo '<input id="hidden-producer-id" type="hidden" value="'.$row["Producer_ID"].'" />';
-      echo '<a data-mdb-toggle="modal" class="edit-producer-btn" data-mdb-target="#editProducerModal"><i class="fas fa-pencil-alt text-warning fa-1x mx-2"></i></a>';
-      echo '<a data-mdb-toggle="modal" class="del-producer-btn" data-mdb-target="#deleteProducerModal"><i class="fas fa-trash-alt text-danger fa-1x mx-2"></i></a>';
+      echo '<a style="cursor: pointer;" data-mdb-toggle="modal" class="edit-producer-btn" data-mdb-target="#editProducerModal"><i class="fas fa-pencil-alt text-warning fa-1x mx-2"></i></a>';
+      echo '<a style="cursor: pointer;" data-mdb-toggle="modal" class="del-producer-btn" data-mdb-target="#deleteProducerModal"><i class="fas fa-trash-alt text-danger fa-1x mx-2"></i></a>';
       echo '</td>';
       echo '</tr>';
     }

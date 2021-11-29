@@ -1,0 +1,32 @@
+#CreateTicket {
+    margin-left: 80%;
+}
+
+.form-popup {
+    display: none;
+    position: relative;
+    width: 250px;
+    left: 0;
+    bottom: 15px;
+    border: 1px solid #afa6a6;
+    background-color: rgb(250, 250, 250);
+    padding: 10px;
+    z-index: 9;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    width: 100px;
+}
+
+.searchbtn {
+    width: 60px;
+}
+
+#form1 {
+    background-color: white;
+}

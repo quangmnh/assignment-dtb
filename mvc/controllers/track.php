@@ -247,6 +247,10 @@ class Track extends Controller {
         $data['playlist_ID'] = $playlistID;
         $data['MaxOrders'] = $max_order;
 
+        if ($max_order['MaxOrders'] == null) {
+            $max_order['MaxOrders'] = 0;
+        }
+
         $view_data = $info + $data;
 
         $this->view("master3", $view_data);
@@ -355,6 +359,10 @@ class Track extends Controller {
         $data['MaxOrders'] = $max_order;
         $data['trackInPlaylist'] = $qr_trackListInPlaylist;
         $data['searchFlag'] = true;
+
+        if ($max_order['MaxOrders'] == null) {
+            $max_order['MaxOrders'] = 0;
+        }
 
         $view_data = $info + $data;
         $this->view("master3", $view_data);

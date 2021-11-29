@@ -75,6 +75,10 @@
                                     value="<?php echo $row['Ticket_ID']?>">
                                 <input type="text" class="form-control hide" name="TicketTimestamp" id="tt"
                                     value="<?php echo $row['TicketTimestamp']?>">
+
+                                <label for="status"><b>Status:</b> </label>
+                                <input type="text" class="form-control" id="status" value="<?php echo $row['Status']?>"
+                                    name="status">
                                 <br>
                                 <button type="submit" class="btn btn-success">Update</button>
                                 <button type="button" class="btn btn-light"

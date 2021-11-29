@@ -40,8 +40,8 @@ class TicketModel extends DB {
         mysqli_query($this->con, $qr);
     }
 
-    public function updateTicket($id, $reissue, $timestamp) {
-        $qr ="UPDATE TICKET SET Issue='$reissue', TicketTimestamp='$timestamp' WHERE Ticket_ID='$id' ";
+    public function updateTicket($id, $reissue, $timestamp, $status) {
+        $qr ="UPDATE TICKET SET Issue='$reissue', TicketTimestamp='$timestamp', Status='$status' WHERE Ticket_ID='$id' ";
         mysqli_query($this->con, $qr);
     }
 

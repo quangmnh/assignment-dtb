@@ -204,14 +204,12 @@ class TrackModel extends DB {
 
         $cc_id = $this->rand_string(22);
 
-        $qr = " INSERT INTO CONTENT VALUES ('$cc_id')";
-        mysqli_query($this->con, $qr);
-
         $playlistID = $this->rand_string(22);
         $qr = " INSERT INTO PLAYLIST VALUES 
                 ('$playlistID', 
                  '$name',
                  '$photo',
+                 0,
                  0,
                  '$cc_id')";
 

@@ -62,8 +62,8 @@
         echo '<td class="col-3" rowspan="2"> <img src="'.$row['Photo'].'" id="playlist_photo"> </td>';
         echo '<td><h2>'.$row['P_Name'].'</h2></td>';
         echo '<td class="col-3" rowspan="2">';
-        echo '<a href="#"> <input type="button" class="btn btn-success" value="Edit"></a>';
-        echo '<a href="#"> <input type="button" class="btn btn-danger" value="Delete"></a>';
+        echo '<a href="../db_assignment2/track/editPlaylist/'.$row['ID'].'"> <input type="button" class="btn btn-success" value="Edit"></a>';
+        echo '<a href="../db_assignment2/track/deleteSystemPlaylist/'.$row['ID'].'"> <input type="button" class="btn btn-danger" value="Delete"></a>';
         echo '</td>';
       echo '</tr>';
 
